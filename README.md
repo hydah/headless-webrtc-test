@@ -1,12 +1,12 @@
-#os version
+# os version
 centos 7
 
-#install chrome
+# install chrome
 curl https://intoli.com/install-google-chrome.sh | bash
 
-#node version
+# node version
 latest must be ok
 
-#run
+# run
 npm install
 node test.js (may need modify the exe path of chrome)
