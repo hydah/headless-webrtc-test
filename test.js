@@ -24,6 +24,7 @@ const puppeteer = require('puppeteer');
     timeout: 20000,
   });
 
+  await page.evaluate('rtc.roomId_ = 2021');
   console.log(await page.evaluate('rtc.sdkAppId_'));
   await page.click('#join');
 
@@ -32,7 +33,7 @@ const puppeteer = require('puppeteer');
   // await page.click('#settings');
   console.log(await page.evaluate('rtc.sdkAppId_'));
 
-  await page.screenshot({path: 'test.png'});
+  // await page.screenshot({path: 'test.png'});
   await page.waitFor(60 * 1000);
 })();
 // main_handler()
